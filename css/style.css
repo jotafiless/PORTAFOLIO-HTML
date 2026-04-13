@@ -1,0 +1,119 @@
+/*El selector universal "*" selecciona todo*/
+* {
+    margin: 0;/*Quita el espacio exterior que el navegador trae por defecto*/
+    padding: 0; /*Quita el espacio interior por defecto*/
+    box-sizing: border-box; /*Hace que el ancho (width) incluya el padding y el borde*/
+}
+
+body {
+    transition: all 0.4s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Define la letra de toda la pagina (legibilidad)*/
+    background-color: burlywood; /*Pone un color de fondo a la pagina*/
+    color: rgb(255, 255, 255); /*Define el color del texto*/
+    line-height: 1.6; /*Da espacio entre lineas de texto para que sea mas facil leer*/
+}
+header {
+    background-color: #002f6c;   /* Color azul oscuro de fondo */
+    color: white;                /* Color de la letra blanca */
+    padding: 2rem;               /* Espacio interno para que el título no esté pegado al borde */
+    text-align: center;          /* Centra el texto del H1 */
+}
+
+nav ul {
+    display: flex;               /* Activa el modo flexible: pone los elementos en fila */
+    justify-content: center;     /* Centra los elementos (links) horizontalmente */
+    gap: 30px;                   /* Crea un espacio exacto de 30px entre cada link */
+    list-style: none;            /* Quita los puntitos negros de la lista (ul) */
+    margin-top: 15px;            /* Separa el menú del título que está arriba */
+}
+
+nav a {
+    color: white;                /* Hace que los links sean blancos */
+    text-decoration: none;       /* Quita la raya de abajo que traen los links por defecto */
+    font-weight: bold;           /* Hace que la letra sea más gruesa */
+}
+
+nav a:hover {
+    color: #ffcc00;              /* Cambia a amarillo cuando pasas el mouse (interactividad) */
+    transition: 0.3s;            /* Hace que el cambio de color sea suave, no de golpe */
+}
+
+article {
+    background-color: white;     /* Fondo blanco para que resalte sobre el gris del body */
+    border: 1px solid #ddd;      /* Una línea gris muy finita alrededor */
+    padding: 20px;               /* Espacio DENTRO: el texto no toca los bordes del cuadro */
+    margin: 20px auto;           /* Espacio FUERA: 20px arriba/abajo y 'auto' para centrar la caja */
+    max-width: 600px;            /* Limita el ancho para que no se vea gigante en pantallas grandes */
+    border-radius: 10px;         /* Redondea las esquinas del cuadro */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Agrega una sombra suave para dar profundidad */
+    color: black; /*Color a la letra ya que no se ve porque la letra default es blanca*/
+}
+
+form {
+    display: flex;               /* Usamos flex para ordenar los campos */
+    flex-direction: column;      /* Pone los campos uno debajo del otro */
+    gap: 15px;                   /* Espacio entre cada campo del formulario */
+    max-width: 400px;            /* Ancho máximo del formulario */
+    margin: 20px auto;           /* Lo centra en la pantalla */
+}
+
+input, textarea {
+    padding: 10px;               /* Hace que el campo sea más "gordito" para escribir mejor */
+    border: 1px solid #ccc;      /* Borde gris claro */
+    border-radius: 5px;          /* Esquinas suavizadas */
+}
+
+button {
+    padding: 10px;               /* Espacio interno del botón */
+    background-color: #002f6c;   /* Color de fondo azul */
+    color: white;                /* Letras blancas */
+    border: none;                /* Quita el borde feo que traen por defecto */
+    cursor: pointer;             /* Hace que aparezca la "manito" al pasar el mouse */
+    border-radius: 5px;          /* Esquinas suavizadas */
+}
+
+/* Esto le dice al navegador: "Si la pantalla mide menos de 768px (un celular)..." */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;  /* Cambia el menú de fila a columna */
+        gap: 10px;               /* Achica el espacio entre links */
+        text-align: center;      /* Centra los textos */
+    }
+
+    article {
+        margin: 10px;            /* Reduce los márgenes para ganar espacio */
+        padding: 15px;           /* Achica un poco el relleno interno */
+    }
+}
+.contenedor-foto {
+    position: relative;          /* Define esta caja como la "referencia" o el "padre" */
+}
+
+.etiqueta-nuevo {
+    position: absolute;          /* Permite mover esta caja libremente dentro del padre */
+    top: 10px;                   /* Se ubica a 10px del borde superior del padre */
+    right: 10px;                 /* Se ubica a 10px del borde derecho */
+    background-color: red;       /* Color de fondo */
+    color: white;                /* Color de letra */
+    padding: 5px;                /* Espacio interno */
+}
+/*ESTO ES SOLO ALGO EXTRA QUE APRENDI QUE SERIA ANIMACIONES Y TAL :)*/
+button {
+    background-color: #002f6c;
+    transition: all 0.4s ease;   /* Hace que CUALQUIER cambio (color, tamaño) tarde 0.4 segundos */
+}
+
+button:hover {
+    background-color: #00bcd4;   /* Cambia a un celeste más brillante */
+    transform: scale(1.1);       /* Agranda el botón un 10% al pasar el mouse */
+}
+article {
+    transition: all 0.4s ease ;
+
+}
+h2, h3, p {
+    text-align: center;
+}
+.a{
+    text-align: center;
+}

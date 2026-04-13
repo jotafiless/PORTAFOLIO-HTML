@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--para poder buscar la ruta del style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>La practica hace al maestro</title>
+</head>
+<body>
+
+    <!--Header es la parte supèrior-->
+    <header>
+            <!--Imagenes con enlaces o direccion de carpeta-->
+    <img src="https://imgs.search.brave.com/--AFgstYj81PmjUd3Esm8Egbnqpi-E82Z8AXsBi7miE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAzL3VuaXZlcnNp/ZGFkLWRlLWNoaWxl/LWxvZ28tMC5wbmc" alt="Logo de Universidad de Chile" width="250px" height="auto">
+        <h1>Mi portafolio</h1>
+    <!--el nav siempre va dentro de header porque es el menu que nos dice donde podemos ir-->
+    <nav>
+        <ul>
+            <!--ul es una lista ordenada-->
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contactanos</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div>
+        <main>
+            <!--Main es donde vive el contenido de verdad, por ejemplo si es una pagina de noticias, las noticias irian aca no en header ni nada de eso, y solo puede existir un solo main en la pagina!-->
+            <h2>Ultimos proyectos</h2>
+            <p>Aqui puedes ver lo que he desarrollado este semestre.</p>
+        </main>
+    </div>
+    <!--Section es para agrupar cosas que hablan de lo mismo-->
+    <section id="galeria">
+        <!--Article es para algo que se explica solo, como tarjeta de producto o un post de blog-->
+        <article>
+            <h3>Calculadora de python!</h3>
+            <p>un proyecto que hice para clase de logica.</p>
+        </article>
+
+    </section>
+    <form>
+        <!--Label siempre debe ir con su for para que sea accesible-->
+        <label for="Nombre">Nombre: </label>
+        <!--Input es el campo en donde escribes-->
+        <input for="text" id="Nombre" name="nombre" placeholder="escribe tu nombre">
+        <button type="submit">Enviar</button>
+    </form>
+<!--el aside se usa para contenido que esta "un poco relacionado" con lo principal, pero que podria ir en otro lado-->
+    <aside>
+        <h3>
+            <ul>
+                <li><a href="#">Wiki de HTML5</a></li>
+                <li><a href="#">Documentacion CSS</a></li>
+            </ul>
+        </h3>
+    </aside>
+<section id="contacto">
+    <h2>Contactame!</h2>
+    <form action="/enviar" method="post">
+        <label for="user_email">Tu email:</label>
+        <input type="email" id="user_email" name="email" placeholder="ejemplo@gmail.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" placeholder="Escriba su mensaje" name="msg"></textarea>
+
+        <button type="submit">Enviar Datos</button>
+    </form>
+
+<!--el famoso A se ocupa mayormente para dirigir a paginas web, existen dos metodos, tanto el que te abre la pagina en la misma pestaña o te abre una nueva-->
+    <!--<a href="google.com">Ir a google</a>
+    <a href="google.com" target="_blank">Ir a google</a>
+
+<!--Estos que mostramos se ocupan dentro de nav, pero estos si tienen dos sabores-->
+<!--Tambien se puede agregar un type en OL donde puedes poner el orden con numeros, numeros romanos, letras, etc. tambien puedes cambiarlo en el LI que esta dentro de ol si quieres que uno solo tenga un cambio o se lea de otra manera-->
+<!--<section>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+    </ul>
+    <ol>
+        <li>Instalar VS code</li>
+        <li>Crear un Index.html</li>
+    </ol>
+</section>
+<!--El div es una caja grande que ocupa todo el ancho (bloque). se usa para agrupar cosas que vas a mover con CSS-->
+<div></div>
+<!---->
+<!--Se usa para envolver una palabra o frase dentro de un texto que cambiarle el color o estilo sin romper el parrafo-->
+<!--<p>Hoy el cielo esta <span style="color: aqua;">Azul</span>.</p>
+<!---->
+    <!--Aqui ponemos datos de "abajito", como redes sociales, dueños de la pagina y copyrights-->
+    <footer>
+        <p>&copy; 2024 - desarrollado por Javier Briceño</p>
+    </footer>
+</section>
+</body>
+</html>
